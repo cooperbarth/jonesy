@@ -1,6 +1,8 @@
 const maxAPI = require("max-api");
 const pizzaAPI = require("dominos");
 
+maxAPI.post("Node.js Process Running");
+
 maxAPI.addHandlers({
     findNearestStore: (address, type) => {
         pizzaAPI.Util.findNearbyStores(address, type, storeData => {
