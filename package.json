@@ -1,0 +1,22 @@
+{
+  "name": "jonesy",
+  "version": "1.0.0",
+  "description": "It's pizza time!",
+  "main": "jonesy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooperbarth/jonesy.git"
+  },
+  "author": "Cooper Barth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cooperbarth/jonesy/issues"
+  },
+  "homepage": "https://github.com/cooperbarth/jonesy#readme",
+  "dependencies": {
+    "dominos": "2.1.1"
+  }
+}
