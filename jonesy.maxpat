@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2240.0, -371.0, 768.0, 630.0 ],
+		"rect" : [ 331.0, 150.0, 768.0, 630.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 533.0, 201.0, 42.0, 22.0 ],
+					"text" : "60201"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 533.0, 164.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -64,7 +88,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 128.0, 162.0, 73.0, 22.0 ],
+					"patching_rect" : [ 289.0, 66.0, 73.0, 22.0 ],
 					"text" : "script status"
 				}
 
@@ -76,7 +100,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 130.0, 81.0, 22.0 ],
+					"patching_rect" : [ 188.5, 66.0, 81.0, 22.0 ],
 					"text" : "script running"
 				}
 
@@ -88,7 +112,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 262.0, 37.0, 22.0 ],
+					"patching_rect" : [ 590.5, 314.0, 37.0, 22.0 ],
 					"text" : "order"
 				}
 
@@ -100,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 229.0, 55.0, 22.0 ],
+					"patching_rect" : [ 517.5, 314.0, 55.0, 22.0 ],
 					"text" : "getMenu"
 				}
 
@@ -112,8 +136,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 194.0, 99.0, 22.0 ],
-					"text" : "findNearestStore"
+					"patching_rect" : [ 533.0, 236.0, 115.0, 22.0 ],
+					"text" : "findNearestStore $1"
 				}
 
 			}
@@ -124,7 +148,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 162.0, 183.0, 22.0 ],
+					"patching_rect" : [ 491.0, 66.0, 183.0, 22.0 ],
 					"text" : "script npm install dominos --save"
 				}
 
@@ -136,7 +160,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.0, 130.0, 98.0, 22.0 ],
+					"patching_rect" : [ 378.0, 66.0, 98.0, 22.0 ],
 					"text" : "script npm install"
 				}
 
@@ -148,7 +172,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 98.0, 63.0, 22.0 ],
+					"patching_rect" : [ 108.0, 66.0, 63.0, 22.0 ],
 					"text" : "script stop"
 				}
 
@@ -230,8 +254,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}

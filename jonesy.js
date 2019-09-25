@@ -4,17 +4,19 @@ const pizzaAPI = require("dominos");
 maxAPI.post("Node.js Process Running");
 
 maxAPI.addHandlers({
-    findNearestStore: (address, type) => {
-        pizzaAPI.Util.findNearbyStores(address, type, storeData => {
+    findNearestStore: address => {
+        pizzaAPI.Util.findNearbyStores(address.toString(), "Delivery", storeData => {
             if (storeData.success) {
                 const stores = storeData.result.Stores;
                 if (stores.length === 0) {
                     maxAPI.post("No stores found.", maxAPI.POST_LEVELS.ERROR);
                     return;
                 }
-                maxAPI.outlet(stores[0].StoreID);                
+                maxAPI.post(`The ID of the closest store is ${stores[0].StoreID}`);
+                maxAPI.outlet(stores[0].StoreID);
             } else {
                 maxAPI.post("Error finding nearby stores.", maxAPI.POST_LEVELS.ERROR);
+                maxAPI.post(storeData.message);
             }
         });
     },
