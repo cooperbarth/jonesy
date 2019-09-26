@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 331.0, 150.0, 803.0, 630.0 ],
+		"rect" : [ 243.0, 147.0, 803.0, 630.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -60,7 +60,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 598.0, 368.5, 93.0, 33.0 ],
-					"text" : "Press this to order"
+					"presentation_linecount" : 2,
+					"text" : "4) Press this to order"
 				}
 
 			}
@@ -91,15 +92,15 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-60",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 513.0, 189.0, 101.0, 67.0 ],
-					"presentation_linecount" : 4,
-					"text" : "firstName\nlastName\naddress\nemail"
+					"patching_rect" : [ 504.0, 182.0, 102.0, 77.0 ],
+					"presentation_linecount" : 5,
+					"text" : "firstName\nlastName\naddress\nemail\nphoneNumber"
 				}
 
 			}
@@ -110,9 +111,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 543.0, 146.5, 115.0, 33.0 ],
+					"patching_rect" : [ 534.0, 142.0, 115.0, 33.0 ],
 					"presentation_linecount" : 2,
-					"text" : "Press this to add customer info"
+					"text" : "2) Press this to add customer info"
 				}
 
 			}
@@ -124,7 +125,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 513.0, 151.0, 24.0, 24.0 ]
+					"patching_rect" : [ 504.0, 146.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -135,9 +136,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 513.0, 268.0, 147.0, 22.0 ],
+					"patching_rect" : [ 504.0, 268.0, 164.0, 22.0 ],
 					"presentation_linecount" : 2,
-					"text" : "addCustomer $2 $3 $4 $5"
+					"text" : "addCustomer $2 $3 $4 $5 $6"
 				}
 
 			}
@@ -164,8 +165,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 708.0, 96.5, 87.0, 47.0 ],
-					"presentation_linecount" : 2,
-					"text" : "Press this to set the item codes to order"
+					"presentation_linecount" : 3,
+					"text" : "3) Press this to set the item codes to order"
 				}
 
 			}
@@ -233,8 +234,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 392.0, 167.0, 112.0, 60.0 ],
-					"text" : "Press this to print the menu of the nearest store to the console"
+					"patching_rect" : [ 392.0, 167.0, 100.0, 60.0 ],
+					"text" : "1) Press this to print the menu of the nearest store to the console"
 				}
 
 			}

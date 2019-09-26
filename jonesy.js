@@ -46,12 +46,13 @@ maxAPI.addHandlers({
         itemCodes = items.split(" ");
         maxAPI.post("Items for order set.");
     },
-    addCustomer: (firstName, lastName, address, email) => {
+    addCustomer: (firstName, lastName, address, email, phoneNumber) => {
         customer = new pizzaAPI.Customer({
             firstName: firstName,
             lastName: lastName,
             address: address,
-            email: email
+            email: email,
+            phoneNumber: phoneNumber
         });
         maxAPI.post("Customer added.");
     },
